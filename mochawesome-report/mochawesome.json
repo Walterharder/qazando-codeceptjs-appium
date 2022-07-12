@@ -1,0 +1,174 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-07-07T00:06:45.807Z",
+    "end": "2022-07-07T00:07:12.449Z",
+    "duration": 26642,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "807c66b2-ee07-45f6-af20-62646ec1d0c9",
+      "title": "",
+      "fullFile": "D:\\Udemy\\Automação de Testes Mobile com CodeceptJS e Appium\\Automation\\steps\\students_test.js",
+      "file": "\\steps\\students_test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e4b8d3e4-d220-4d7d-9730-59d205d8e4d4",
+          "title": "Students",
+          "fullFile": "D:\\Udemy\\Automação de Testes Mobile com CodeceptJS e Appium\\Automation\\steps\\students_test.js",
+          "file": "\\steps\\students_test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: codeceptjs.beforeSuite in \"Students\"",
+              "fullTitle": "Students \"before all\" hook: codeceptjs.beforeSuite in \"Students\"",
+              "timedOut": false,
+              "duration": 2,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteSetup(suite)",
+              "err": {},
+              "uuid": "82a525fd-2734-4a01-9b94-4f6cc1c79918",
+              "parentUUID": "e4b8d3e4-d220-4d7d-9730-59d205d8e4d4",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"before each\" hook: codeceptjs.before in \"Students\"",
+              "fullTitle": "Students \"before each\" hook: codeceptjs.before in \"Students\"",
+              "timedOut": false,
+              "duration": 15431,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.setup(suite)",
+              "err": {},
+              "uuid": "ba4f96a3-6bfd-4c41-8f52-43e14bc306be",
+              "parentUUID": "e4b8d3e4-d220-4d7d-9730-59d205d8e4d4",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook: codeceptjs.afterSuite in \"Students\"",
+              "fullTitle": "Students \"after all\" hook: codeceptjs.afterSuite in \"Students\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteTeardown(suite)",
+              "err": {},
+              "uuid": "cbbc8125-6d90-4918-8de4-462808229bc7",
+              "parentUUID": "e4b8d3e4-d220-4d7d-9730-59d205d8e4d4",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"after each\" hook: finalize codeceptjs in \"Students\"",
+              "fullTitle": "Students \"after each\" hook: finalize codeceptjs in \"Students\"",
+              "timedOut": false,
+              "duration": 915,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.teardown(suite)",
+              "err": {},
+              "uuid": "35759a9f-16f1-4f8a-94bb-a420f82f49d1",
+              "parentUUID": "e4b8d3e4-d220-4d7d-9730-59d205d8e4d4",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Add Students with success",
+              "fullTitle": "Students: Add Students with success",
+              "timedOut": false,
+              "duration": 10287,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const myCode = code.getCode()\n    const myName = name.getName()\n    login_page.doLogin('teste@teste.com', '123456')\n    home_page.registerStudent(myCode, myName)\n    home_page.searchStudent(myName, myCode)",
+              "err": {},
+              "uuid": "7126e3cb-23ee-4d31-90f6-f892549b456f",
+              "parentUUID": "e4b8d3e4-d220-4d7d-9730-59d205d8e4d4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7126e3cb-23ee-4d31-90f6-f892549b456f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10287,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 0
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.0.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {},
+      "version": "6.2.0"
+    }
+  }
+}
