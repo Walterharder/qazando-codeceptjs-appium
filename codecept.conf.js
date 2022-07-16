@@ -1,4 +1,4 @@
-
+const server = require('./server/server.js')
 exports.config = {
   output: './output',
   helpers: {
@@ -8,8 +8,12 @@ exports.config = {
       desiredCapabilities: {
         appPackage: 'com.qazandoapp',
         appActivity: 'MainActivity',
-        deviceName: 'Pixel 2',
-        plataformVersion: '9'
+        deviceName: 'SM N975F+',
+        plataformVersion: '11 ',
+        //automationName:'UiAutomator2',
+        //browserName: 'Chrome',
+        fullReset: false,
+        noReset: true
       }
     }
   },
@@ -18,12 +22,12 @@ exports.config = {
     login_page: './pages/login_page.js',
     home_page: './pages/home_page.js'
   },
-  //bootstrap: async () => {
-  //  await server.start();
-  //},
-  //teardown: async () => {
-  //  await server.stop();
-  //},
+  bootstrap: async () => {
+    await server.start();
+  },
+  teardown: async () => {
+    await server.stop();
+  },
   mocha: {},
   timeout: null,
   hooks: [],
